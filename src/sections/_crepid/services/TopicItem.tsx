@@ -32,7 +32,6 @@ export default function TopicItem({ topic }: Props) {
           alt={category}
           src={cover}
           ratio="4/3"
-          overlay={alpha(theme.palette.grey[900], 0.48)}
           sx={{
             transition: (theme) =>
               theme.transitions.create('transform', {

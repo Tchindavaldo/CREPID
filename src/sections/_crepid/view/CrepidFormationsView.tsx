@@ -267,7 +267,7 @@ export default function CrepidFormationsView() {
                         borderRadius: 2,
                         alignItems: 'center',
                         justifyContent: 'center',
-                        bgcolor: (theme) => alpha(theme.palette[formation.color].main, 0.08),
+                        bgcolor: (theme) => alpha((theme.palette as any)[formation.color].main, 0.08),
                         color: `${formation.color}.main`,
                       }}
                     >

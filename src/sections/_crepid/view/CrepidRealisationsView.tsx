@@ -8,7 +8,7 @@ import { fShortenNumber } from 'src/utils/formatNumber';
 import Iconify from 'src/components/iconify';
 import Image from 'src/components/image';
 import CountUp from 'src/components/count-up';
-import Carousel, { useCarousel, CarouselArrows } from 'src/components/carousel';
+import Carousel, { CarouselArrows } from 'src/components/carousel';
 import { useRef } from 'react';
 
 // ----------------------------------------------------------------------
@@ -307,7 +307,7 @@ export default function CrepidRealisationsView() {
                               borderRadius: 1.5,
                               alignItems: 'center',
                               justifyContent: 'center',
-                              bgcolor: (theme) => alpha(theme.palette[realisation.color].main, 0.15),
+                              bgcolor: (theme) => alpha((theme.palette as any)[realisation.color].main, 0.15),
                               color: `${realisation.color}.main`,
                             }}
                           >

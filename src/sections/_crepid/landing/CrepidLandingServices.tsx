@@ -132,7 +132,7 @@ function ServiceItem({ service, index }: ServiceItemProps) {
           width: 88,
           height: 88,
           mx: 'auto',
-          color: (theme) => theme.palette[COLORS[index % COLORS.length]].main,
+          color: (theme) => (theme.palette as any)[COLORS[index % COLORS.length]].main,
         }}
       />
 
@@ -151,7 +151,7 @@ function ServiceItem({ service, index }: ServiceItemProps) {
         color={COLORS[index % COLORS.length]}
         sx={{
           '&:hover': {
-            bgcolor: (theme) => theme.palette[COLORS[index % COLORS.length]].lighter,
+            bgcolor: (theme) => (theme.palette as any)[COLORS[index % COLORS.length]].lighter,
           },
         }}
       >

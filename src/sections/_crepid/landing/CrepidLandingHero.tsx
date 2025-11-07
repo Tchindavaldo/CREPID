@@ -6,6 +6,8 @@ import { Stack, Typography, Button, Box, Container } from '@mui/material';
 import { bgGradient } from 'src/utils/cssStyles';
 // hooks
 import useResponsive from 'src/hooks/useResponsive';
+// config
+import { HEADER } from 'src/config-global';
 // components
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
@@ -42,7 +44,7 @@ export default function CrepidLandingHero() {
   return (
     <Box
       sx={{
-        height: '100vh',
+        height: { xs: `calc(100vh + ${HEADER.H_MOBILE}px)`, md: '100vh' },
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -53,16 +55,16 @@ export default function CrepidLandingHero() {
         sx={{
           position: 'absolute',
           width: 1,
-          height: '100vh',
+          height: { xs: `calc(100vh + ${HEADER.H_MOBILE}px)`, md: '100vh' },
         }}
       >
         <Box
           sx={{
             '& .slick-list': {
-              height: '100vh',
+              height: { xs: `calc(100vh + ${HEADER.H_MOBILE}px)`, md: '100vh' },
             },
             '& img': {
-              height: '100vh',
+              height: { xs: `calc(100vh + ${HEADER.H_MOBILE}px)`, md: '100vh' },
               objectFit: 'cover',
             },
           }}
@@ -74,7 +76,7 @@ export default function CrepidLandingHero() {
       <Container
         sx={{
           py: { xs: 10, md: 0 },
-          height: '100vh',
+          height: { xs: `calc(100vh + ${HEADER.H_MOBILE}px)`, md: '100vh' },
           display: 'flex',
           alignItems: 'center',
           position: 'relative',

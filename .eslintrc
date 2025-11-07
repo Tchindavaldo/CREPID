@@ -81,6 +81,11 @@
       {
         "ignoreCase": false
       }
-    ]
+    ],
+    "react/no-unescaped-entities": 0,
+    "arrow-body-style": 0,
+    "import/no-duplicates": 0,
+    "@typescript-eslint/no-shadow": 0,
+    "react/jsx-boolean-value": 0
   }
 }

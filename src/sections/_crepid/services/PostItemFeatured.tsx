@@ -33,7 +33,6 @@ export default function PostItemFeatured({ post, largePost }: Props) {
         <Image
           alt={title}
           src={coverImg}
-          overlay={alpha(theme.palette.grey[900], 0.48)}
           sx={{
             height: { xs: 280, md: largePost ? 560 : 280 },
           }}

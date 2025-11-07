@@ -111,7 +111,7 @@ export default function CrepidContactView() {
                     borderRadius: '50%',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    bgcolor: (theme) => alpha(theme.palette[info.color].main, 0.08),
+                    bgcolor: (theme) => alpha((theme.palette as any)[info.color].main, 0.08),
                     color: `${info.color}.main`,
                   }}
                 >

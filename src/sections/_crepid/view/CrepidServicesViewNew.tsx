@@ -12,7 +12,14 @@ import CrepidServicesPosts from '../services/CrepidServicesPosts';
 
 // ----------------------------------------------------------------------
 
-const _tags = ['Formation', 'Agriculture', 'Élevage', 'Développement', 'Aquaculture', 'Environnement'];
+const _tags = [
+  { label: 'Formation', path: '#' },
+  { label: 'Agriculture', path: '#' },
+  { label: 'Élevage', path: '#' },
+  { label: 'Développement', path: '#' },
+  { label: 'Aquaculture', path: '#' },
+  { label: 'Environnement', path: '#' },
+];
 const _categories = [
   { label: 'Formations', path: '#' },
   { label: 'Accompagnement', path: '#' },
