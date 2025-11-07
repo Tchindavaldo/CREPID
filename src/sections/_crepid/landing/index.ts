@@ -1,0 +1,12 @@
+export { default as CrepidLandingHero } from './CrepidLandingHero';
+export { default as CrepidLandingVision } from './CrepidLandingVision';
+export { default as CrepidLandingObjectives } from './CrepidLandingObjectives';
+export { default as CrepidLandingDomainesCarousel } from './CrepidLandingDomainesCarousel';
+export { default as CrepidLandingRealisations } from './CrepidLandingRealisations';
+export { default as CrepidLandingExemples } from './CrepidLandingExemples';
+export { default as CrepidLandingBeneficiaires } from './CrepidLandingBeneficiaires';
+export { default as CrepidLandingEquipe } from './CrepidLandingEquipe';
+export { default as CrepidLandingPerspectives } from './CrepidLandingPerspectives';
+export { default as CrepidLandingReferences } from './CrepidLandingReferences';
+export { default as CrepidLandingTestimonials } from './CrepidLandingTestimonials';
+export { default as CrepidLandingActualites } from './CrepidLandingActualites';
